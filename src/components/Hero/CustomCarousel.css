@@ -1,0 +1,96 @@
+.custom-carousel {
+  margin-top:100px;
+  width: 100%;
+  height: 80vh; /* full-screen */
+  position: relative;
+}
+
+/* Carousel images */
+.custom-carousel .carousel-bg {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: transform 0.5s ease;
+}
+
+.custom-carousel .carousel-bg:hover {
+  transform: scale(1.05);
+}
+
+/* Caption styling */
+.custom-carousel .carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+  text-align: left;
+  max-width: 600px;
+}
+
+.custom-carousel .carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.7);
+}
+
+.custom-carousel .carousel-caption p {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  margin: 20px 0;
+  text-shadow: 1px 2px 6px rgba(0,0,0,0.5);
+}
+
+/* CTA button */
+.carousel-cta {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  background:rgb(254, 143, 73);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-cta:hover {
+  background:#CB5A0C(255, 166, 0, 0.764);
+  transform: scale(1.05);
+}
+
+/* Carousel arrows */
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  filter: invert(100%);
+  opacity: 0.7;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-carousel .carousel-control-prev-icon:hover,
+.custom-carousel .carousel-control-next-icon:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+/* Indicators */
+.custom-carousel .carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  opacity: 0.7;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.custom-carousel .carousel-indicators .active {
+  background-color: #ffffff;
+  opacity: 100;
+  width: 0px;
+  height: 0px; 
+  /* make active indicator invisible */
+}

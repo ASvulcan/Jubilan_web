@@ -1,0 +1,103 @@
+/* MAIN SECTION */
+.vision-section {
+  margin-top: 120px;
+  padding: 80px 0;
+  background: #f4f6fa;
+}
+
+/* TITLES */
+.vision-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #0d1b2a;
+}
+
+.vision-subtitle {
+  text-align: center;
+  color: #444;
+  margin: 0 auto 50px;
+  max-width: 900px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* GRID */
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.vision-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.vision-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* CARD TITLE */
+.vision-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1a3fa6;
+}
+
+/* CARD DESCRIPTION */
+.vision-card-desc {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* FOOTER BOX */
+.vision-footer {
+  margin-top: 60px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.vision-footer p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.contact-text {
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vision-title {
+    font-size: 28px;
+  }
+
+  .vision-subtitle {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .vision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-card {
+    padding: 25px;
+  }
+}

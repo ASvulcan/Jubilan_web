@@ -1,0 +1,95 @@
+/* Navbar background and spacing */
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.custom-navbar {
+  background: rgba(255, 255, 255, 0.65);
+  padding: 14px 0; /* slightly smaller for mobile */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease;
+}
+
+/* Brand text */
+.custom-navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #000000 !important;
+}
+
+.brand-text {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Navigation links */
+.custom-navbar .nav-link {
+  position: relative;
+  color: #222222 !important;
+  margin: 0 18px;
+  font-size: 1rem;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+/* Hover underline animation */
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: orange;
+  transition: width 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Shadow on hover */
+.custom-navbar .nav-link:hover {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Right alignment */
+.custom-navbar .navbar-nav {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 10px 0; /* reduce height */
+  }
+
+  .custom-navbar .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .custom-navbar .nav-link {
+    margin: 10px 0;
+    font-size: 1.1rem;      /* larger tap area */
+    padding: 8px 0;         /* spacing inside dropdown */
+  }
+
+  /* Make navlinks full width inside the mobile menu */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  /* Remove hover line on mobile (not needed) */
+  .custom-navbar .nav-link::after {
+    display: none;
+  }
+}
+
+section {
+  scroll-margin-top: 100px;  /* adjust based on navbar height */
+}
+

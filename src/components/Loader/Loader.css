@@ -1,0 +1,37 @@
+/* ...existing code... */
+.loader-wrapper {
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* make background semi-transparent and blur underlying content */
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  z-index: 1000;
+}
+
+/* ...existing code... */
+.spinner {
+  width: 45px;
+  height: 45px;
+
+  border: 4px solid #ccc;
+  border-top-color: #d8771d;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+
+  /* subtle glow + slight soft blur on the spinner edge */
+  box-shadow: 0 0 10px rgba(216, 119, 29, 0.35);
+  filter: drop-shadow(0 0 6px rgba(216, 119, 29, 0.35));
+}
+/* ...existing code... */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

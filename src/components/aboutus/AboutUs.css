@@ -1,0 +1,60 @@
+.about-section {
+    margin-top: 100px;
+    background-color: #f7f8fc;
+    padding: 60px 0;
+}
+
+/* Container remains centered, but TEXT is left-aligned */
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;   /* FIXED: left align text */
+}
+
+.text-muted {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6c757d;
+    display: block;
+}
+
+.title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin: 10px 0 20px;
+}
+
+.lead {
+    font-weight: 500;
+    color: #4c5c68;
+    line-height: 1.7;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .lead {
+        font-size: 17px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .title {
+        font-size: 26px;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
+}
