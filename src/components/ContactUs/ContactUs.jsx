@@ -38,7 +38,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="contactpagefix">
+    <div className="contactpagefix" data-aos="fade-up">
       <div className="contact-container">
         <h2 className="contact-heading">Contact Us</h2>
 

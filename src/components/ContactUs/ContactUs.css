@@ -1,19 +1,19 @@
 .contactpagefix {
-  margin-top: 150px;
-  margin-bottom: -100px;
+  padding-top: 120px; /* offset for fixed navbar */
   min-height: 100vh;
+  margin-bottom: -100px;
 }
 
 /* Contact Container */
 .contact-container {
-  margin-top:100px;
+  margin-top: 50px; /* you can keep some spacing if you like */
   max-width: 900px;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  background-color: rgba(255, 255, 255, 0.85); /* Transparent white + texture (d) */
+  background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(2px);
   margin: 50px auto;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

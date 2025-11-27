@@ -12,6 +12,10 @@ import ContactPage from "./pages/Contact";
 import Loader from "./components/Loader/Loader";
 import "./components/Loader/Loader.css";
 
+// Import AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -20,6 +24,16 @@ function App() {
     setTimeout(() => {
       setLoading(false);
     }, 1000);
+
+    // Initialize AOS animations
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true,     // animate only once
+      easing: "ease-in-out",
+    });
+
+    // Refresh AOS on route change or content load
+    AOS.refresh();
   }, []);
 
   if (loading) {

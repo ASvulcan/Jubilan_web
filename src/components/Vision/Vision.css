@@ -2,7 +2,7 @@
 .vision-section {
   margin-top: 120px;
   padding: 80px 0;
-  background: #f4f6fa;
+  background: #ffffff;
 }
 
 /* TITLES */
@@ -33,12 +33,12 @@
 /* CARD */
 .vision-card {
   background: #fff;
+  width: 100%;
   border-radius: 12px;
   padding: 30px;
   text-align: left;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
 }
 
 .vision-card:hover {
@@ -81,6 +81,11 @@
   font-size: 17px;
   font-weight: 600;
 }
+
+.vision-card:hover .vision-card-title {
+  color: #fc9f34;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {

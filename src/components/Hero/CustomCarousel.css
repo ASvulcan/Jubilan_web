@@ -88,9 +88,9 @@
 }
 
 .custom-carousel .carousel-indicators .active {
-  background-color: #ffffff;
-  opacity: 100;
-  width: 0px;
-  height: 0px; 
-  /* make active indicator invisible */
+  width: 14px;
+  height: 14px;
+  opacity: 1;
 }
+   /* make active indicator invisible */
+

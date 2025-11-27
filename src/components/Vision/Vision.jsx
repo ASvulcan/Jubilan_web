@@ -41,7 +41,7 @@ const visionContent = [
 
 const Vision = () => {
   return (
-    <section className="vision-section">
+    <section className="vision-section" data-aos="fade-up">
       <div className="container">
 
         <h2 className="vision-title">What We Do</h2>

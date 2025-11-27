@@ -33,7 +33,7 @@ const slides = [
 
 function CustomCarousel() {
   return (
-    <Carousel fade className="custom-carousel" interval={3000}>
+    <Carousel fade className="custom-carousel" interval={3000} data-aos="fade-up">
       
       {slides.map((slide) => (
         <Carousel.Item key={slide.id}>

@@ -1,0 +1,15 @@
+/* Reset for App root */
+#root, .App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: spacing between stacked sections */
+.App section + section {
+  margin-top: 0; /* we already have section padding, no extra needed */
+}
+html{
+    scroll-behavior: smooth;
+}
